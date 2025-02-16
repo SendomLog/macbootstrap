@@ -1,6 +1,9 @@
 #!bin/bash
 [ -z "${BRANCH}" ] && export BRANCH="master"
 
+echo "sendomlog branch is ${BRANCH}"
+exit 1
+
 if [[ -e ~/.macbootstrap ]]; then
   rm -rf ~/.macbootstrap
 fi
